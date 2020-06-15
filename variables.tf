@@ -50,6 +50,12 @@ variable "cluster_name" {
   description = "The name of the EKS cluster"
 }
 
+variable "asg_name" {
+  type        = string
+  description = "The name of the ASG of nodegroup"
+  default     = null
+}
+
 variable "ec2_ssh_key" {
   type        = string
   description = "SSH key name that should be used to access the worker nodes"
